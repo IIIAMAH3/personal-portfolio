@@ -1,0 +1,9 @@
+{% extends "portfolio/base.html" %}
+{% block content %}
+    <div class="container text-left mt-5">
+        <title>{{ blog.title.capitalize}}</title>
+        <h2>{{ blog.title }}</h2>
+        <h2>--{{ blog.date|date:"F jS Y" }}--</h2>
+        <p style="font-size: 18px;">{{ blog.description| safe}}</p>
+    </div>
+{% endblock %}
